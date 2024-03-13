@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    
+   
+}
+    .main {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .main2 {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .main3 {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    }
+    
+   
+    .class1 {
+    padding:0;
+    background: hsl(200, 76%, 52%);
+    height: 80px;
+    width:100%;
+    }
+    .class1 img {
+     width:300px;
+    }
+    .nav-link{
+    color: aliceblue;
+   
+    }
+    .offcanvas {
+        background-color: #0c0d0d;
+    }
+    .class2 {
+     display:flex;
+    padding: 40px 0;
+    background-color:transparent;
+    height:auto;
+    width:auto;
+    }
+    .class2 img {
+        
+        width:600px;
+        height:300px;
+    }
+    .class2 h3 {
+        font-size: 35px;
+    }
+    .text-box{
+	font-size: 80px;
+	font-weight: 500;
+  text-align:left;
+	width:100%;
+  padding: 0px;
+  height: auto;
+}
+.fixed-text{
+	display: inline-block;
+}
+.animate-text{
+	display: inline-block;
+	vertical-align: top;
+	height: 113px;
+	overflow: hidden;
+}
+.animate-text div{
+	animation:9s wordChange;
+	animation-iteration-count: infinite;
+	animation-timing-function: steps(1);
+}
+.animate-text span{
+	position: relative;
+	color: #53adfc;
+	display: block;
+	text-align: left;
+
+}
+.animate-text span:after{
+	content: "";
+	position: absolute;
+	left: 0;
+	border-left: 5px solid #53adfc;
+	height: 100%;
+	animation:3s textType;
+	animation-iteration-count: infinite;
+	animation-timing-function: steps(9);
+	animation-fill-mode: forwards;
+	right: -2px;
+	background-color: #f1f4f4;
+	overflow: hidden;
+}
+
+@keyframes textType{
+	0%{
+		left: 0;
+	}
+	50%{
+		left: 100%;
+	}
+  
+}
+@keyframes wordChange{
+	0%{
+		margin-top: 0;
+	}
+	33.333%{
+		margin-top: -113px;
+	}
+
+	100%{
+		margin-top: 0;
+	}
+}
+
+.class3 {
+    padding: 10px 0;
+     display:flex;
+     justify-content: center;
+    background-color:transparent;
+    height:auto;
+    width:auto;
+    }
+   
+.row h1 {
+    color: #3da1d3;
+    font-family: sans-serif;
+    font-weight: bolder;
+}
+.col{
+    padding:0 60px;
+}
+.class4 {
+  margin-top: 50px;
+    background-color: #d9e2e9;
+     display:flex;
+     justify-content: center;
+    height:auto;
+    width:auto;
+    }
+    .class5 {
+     display:flex;
+    margin-top: 50px;
+    background-color:blue;
+    height:auto;
+    width:auto;
+    }
+    .class5 img{
+        width:1080px;
+    }
+
+ </style>
+</head>
+<body>
+<div class="main">
+    <div class="class1">
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container">
+          <a class="navbar-brand" href="#"><img src="https://piofx.s3.ap-south-1.amazonaws.com/themes/55/file_pp_logo_dark.png"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation" >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class=" offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel" >Offcanvas</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class=" nav-link" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="mx-2 nav-item">
+                  <a class=" nav-link"  href="#">Resources</a>
+                </li>
+                <li class="mx-2 nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Job Training
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Full Stack Java with placement</a></li>
+                    <li><a class="dropdown-item" href="#">Full Stack Python with placement</a></li>
+                    <li><a class="dropdown-item" href="#">Fee Structure</a></li>
+      
+                  </ul>
+                  <li class="nav-item">
+                    <button type="button" class="btn btn-danger">Talk to Us</button>
+                  </li> </li>  </ul>
+        </div>  </div>  </div>
+         </nav> </div></div>
+        <div class="main2">
+            <div class="class2">
+                <div class="text-box">
+                    <div class="fixed-text">Get</div>
+                    <div class="animate-text">
+                      <div>
+                        <span>Placed</span>
+                        <span>Trained</span>
+                        
+                       </div>  </div>	
+                      <h3> Fullstack Java Training with<br>
+                        placement assistance</h3> 
+                        <button type="button" class="btn btn-primary">Primary</button> 
+                        <button type="button" class="btn btn-outline-primary">learn More ></button>                   
+                   
+                    </div>
+                    <div class="d-none d-md-block"> <img src="https://piofx.s3.ap-south-1.amazonaws.com/themes/55/file_pp_header_a.png" class="img-fluid" alt="..."> 
+                    </div>
+                  </div>
+                  </div>
+                  <div class="main3">
+                 <div class="class3">
+                    <div class="d-none d-md-block">
+                    <div class="row ">
+                        <div class="col">
+                           <h1> 15000+</h1>
+                            Active Learners
+                        </div>
+                        <div class="col">
+                            <h1>4000+</h1>
+                            Direct Placements
+                        </div>
+                        <div class="col">
+                            <h1>300+</h1>
+                            Colleges Network
+                        </div>
+                        <div class="col">
+                          <h1>  180+</h1>
+                            Corporate Clients
+                          </div>
+                      </div>
+                    </div>
+                    </div></div>
+            <div class="main2">
+                <div class="class4">
+                    
+                    Our Branches :&nbsp;&nbsp; Madhapur (Hyderabad),&nbsp;&nbsp; Dilsukhnagar,&nbsp;&nbsp; Warangal, &nbsp;&nbsp; Visakhapatnam,&nbsp;&nbsp; Kakinada,&nbsp;&nbsp; Vijayawada,&nbsp;&nbsp; Guntur,&nbsp;&nbsp; Tirupati 
+</div></div> 
+<div class="main">
+<div class="class5">
+
+<img src="https://piofx.s3.ap-south-1.amazonaws.com/themes/55/file_pp_ss.png
+" class="img-fluid" alt="...">
+            
+          
+        
+     
+ <script
+src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+crossorigin="anonymous"
+></script>
+<script
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+crossorigin="anonymous"
+></script>
+    
+</body>
+</html>
